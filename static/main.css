@@ -1,0 +1,22 @@
+.photo {
+    object-fit: cover;
+    height: 300px !important;
+}
+
+.gallery-button {
+    border-radius: 4px;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    opacity: 0.5;
+    margin: 5px;
+}
+
+.gallery-button:hover {
+    color: white;
+    opacity: 1;
+}
+
+.pswp__caption__center {
+    text-align: center !important;
+}

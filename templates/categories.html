@@ -1,0 +1,76 @@
+{% load static %}
+
+{% include "components/header.html" %}
+
+<h1 class="title">
+    Categories
+</h1>
+
+<div class="columns">
+    <div class="column is-one-quarter">
+        <aside class="menu">
+            <p class="menu-label">
+                Swimming
+            </p>
+            <ul class="menu-list">
+                <li><a href="/category/200214496/">Bikinis Set</a></li>
+                <li><a href="/category/200005191/">Two-Piece Suits</a></li>
+                <li><a href="/category/200005189/">One-Piece Suits</a></li>
+                <li><a href="/category/200215171/">Cover-Ups</a></li>
+                <li><a href="/category/200215177/">Two-Piece Separates</a></li>
+                <li><a href="/category/200005185/">Body Suits</a></li>
+            </ul>
+            <p class="menu-label">
+                Bottoms
+            </p>
+            <ul class="menu-list">
+                <li><a href="/category/100005798/">Skirts</a></li>
+                <li><a href="/category/200001089/">Leggings</a></li>
+                <li><a href="/category/100003161/">Jeans</a></li>
+                <li><a href="/category/100003142/">Pants & Capris</a></li>
+                <li><a href="/category/100003163/">Shorts</a></li>
+            </ul>
+            <p class="menu-label">
+                Outwear & Jackets
+            </p>
+            <ul class="menu-list">
+                <li><a href="/category/200000926/">Basic Jackets</a></li>
+                <li><a href="/category/200217246/">Real Fur</a></li>
+                <li><a href="/category/200003457/">Leather & Suede</a></li>
+                <li><a href="/category/200000885/">Blazers</a></li>
+                <li><a href="/category/200003458/">Trench</a></li>
+                <li><a href="/category/200003459/">Wool & Blends</a></li>
+            </ul>
+
+            <p class="menu-label">
+                Tops & Sets
+            </p>
+            <ul class="menu-list">
+                <li><a href="/category/200001648/">Blouses & Shirts</a></li>
+                <li><a href="/category/200000782/">Suits & Sets</a></li>
+                <li><a href="/category/200001092/">Jumpsuits</a></li>
+                <li><a href="/category/200215341/">Rompers</a></li>
+                <li><a href="/category/200000773/">Intimates</a></li>
+                <li><a href="/category/200000777/">Sleep & Lounge</a></li>
+            </ul>
+
+            <p class="menu-label">
+                Weddings & Events
+            </p>
+            <ul class="menu-list">
+                <li><a href="/category/100003269/">Wedding Dresses</a></li>
+                <li><a href="/category/100005792/">Evening Dresses</a></li>
+                <li><a href="/category/100005791/">Prom Dresses</a></li>
+                <li><a href="/category/100003270/">Bridesmaid Dresses</a></li>
+                <li><a href="/category/100003271/">Flower Girl Dresses</a></li>
+                <li><a href="/category/100005790/">Cocktail Dresses</a></li>
+            </ul>
+        </aside>
+    </div>
+    <div class="column">
+        {% include "components/photos_grid.html" with columns=4 %}
+        {% include "components/pagination.html" %}
+    </div>
+</div>
+
+{% include "components/footer.html" %}

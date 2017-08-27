@@ -1,0 +1,26 @@
+{% load static %}
+
+{% include "components/header.html" %}
+
+<h1 class="title">
+    Photos by item
+</h1>
+
+<form>
+    <div class="columns">
+        <div class="column is-6">
+            <div class="field">
+                <div class="control">
+                    <input name="url" class="input" type="text" placeholder="Aliexpress item url">
+                </div>
+            </div>
+        </div>
+        <div class="column is-2">
+            <div class="control">
+                <input type="submit" class="button is-primary" value="Search">
+            </div>
+        </div>
+    </div>
+</form>
+
+{% include "components/footer.html" %}

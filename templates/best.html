@@ -1,0 +1,32 @@
+{% load static %}
+
+{% include "components/header.html" %}
+
+<h1 class="title">
+    Top
+</h1>
+
+<div class="tabs">
+    <ul>
+        <li class="{% if interval == 'day' %} is-active {% endif %}">
+            <a href="/">past day</a>
+        </li>
+
+        <li class="{% if interval == 'week' %} is-active {% endif %}">
+            <a href="/week/">past week</a>
+        </li>
+
+        <li class="{% if interval == 'month' %} is-active {% endif %}">
+            <a href="/month/">past month</a>
+        </li>
+
+        <li class="{% if interval == 'all' %} is-active {% endif %}">
+            <a href="/all/">all time</a>
+        </li>
+    </ul>
+</div>
+
+{% include "components/photos_grid.html" with columns=5 %}
+{% include "components/pagination.html" %}
+
+{% include "components/footer.html" %}

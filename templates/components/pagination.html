@@ -1,0 +1,28 @@
+{% load extras %}
+
+<nav class="pagination is-centered" role="navigation">
+    <ul class="pagination-list">
+        {% if photos|has_previous_pages %}
+            <li>
+                <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+        {% endif %}
+
+        {% for page in photos|pages %}
+            <li>
+                <a
+                        class="pagination-link {% if photos.number == page %}is-current{% endif %}"
+                        href="?page={{ page }}"
+                >
+                    {{ page }}
+                </a>
+            </li>
+        {% endfor %}
+
+        {% if photos|has_next_pages %}
+            <li>
+                <span class="pagination-ellipsis">&hellip;</span>
+            </li>
+        {% endif %}
+    </ul>
+</nav>

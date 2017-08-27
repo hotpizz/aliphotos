@@ -1,0 +1,12 @@
+{% load static %}
+
+{% include "components/header.html" %}
+
+<h1 class="title">
+    Item #{{ item_id }}
+</h1>
+
+{% include "components/photos_grid.html" with columns=5 %}
+{% include "components/pagination.html" %}
+
+{% include "components/footer.html" %}

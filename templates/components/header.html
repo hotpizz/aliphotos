@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AliPhotos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static "lib/bulma/bulma.min.css" %}">
+    <link rel="stylesheet" href="{% static "main.css" %}">
+
+    <link rel="stylesheet" href="{% static "lib/photoswipe/photoswipe.css" %}">
+    <link rel="stylesheet" href="{% static "lib/photoswipe/default-skin/default-skin.css" %}">
+    <script src="{% static "lib/photoswipe/photoswipe.min.js" %}"></script>
+    <script src="{% static "lib/photoswipe/photoswipe-ui-default.min.js" %}"></script>
+
+    <link rel="icon" href="{% static "favicon.png" %}"/>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="{% static "logo.png" %}"
+                     alt="AliPhotos" width="146" height="28">
+            </a>
+
+            <div class="navbar-burger burger" data-target="navMenubd-example">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navMenubd-example" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    Top
+                </a>
+                <a class="navbar-item" href="/new/">
+                    New
+                </a>
+                <a class="navbar-item " href="/categories/">
+                    Categories
+                </a>
+                <a class="navbar-item " href="/items/">
+                    Items
+                </a>
+                <a class="navbar-item " href="/add/">
+                    Add photos
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="button is-primary" href="https://chrome.google.com/webstore/detail/cceenlleaebnbfljajnfoehcjcideodn/" target="_blank">
+              <span class="icon">
+                <i class="fa fa-download"></i>
+              </span>
+                                <span>Install extension</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="section">
